@@ -1,0 +1,20 @@
+include:
+  - project: "devops/common-ci"
+    file: "/pipelines/javascript.yaml"
+
+deploy-for-mr:
+  environment:
+    url: https://$CI_ENVIRONMENT_SLUG.typeform-overview.metabolic.software
+    kubernetes:
+      namespace: typeform-overview-test
+
+stop-review:
+  environment:
+    kubernetes:
+      namespace: typeform-overview-test
+
+deploy-to-production:
+  environment:
+    name: production
+    kubernetes:
+      namespace: typeform-overview

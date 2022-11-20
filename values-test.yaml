@@ -1,0 +1,13 @@
+service:
+  enabled: true
+  port: 80
+
+ingress:
+  enabled: true
+  hosts:
+    - name: test.typeform-overview.metabolic.software
+      path: /
+  tls:
+    - secretName: tls-typeform-overview
+      hosts:
+        - test.typeform-overview.metabolic.software
