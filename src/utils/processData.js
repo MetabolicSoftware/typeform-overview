@@ -1,9 +1,8 @@
-import data from "../../data/XrH6qm0B - Example typeform.json";
 import fieldShortName from "./fieldShortName.js";
 import choiceShortName from "./choiceShortName.js";
 import logicText from "./logicText.js";
 
-export default function getData() {
+export default function getData(data) {
   const fieldsByRef = {};
 
   function processGroupFields(fields, level = 0, prefix = "") {
