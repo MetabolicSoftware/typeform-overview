@@ -25,7 +25,12 @@ async function onFileChange(event) {
 <template>
   <div class="flex justify-between m-3 gap-3">
     <h1>{{ data.title }}</h1>
-    <input ref="fileInput" type="file" @change="onFileChange" />
+    <input
+      ref="fileInput"
+      type="file"
+      @change="onFileChange"
+      class="print:hidden"
+    />
   </div>
   <FormField v-for="field of data.fields" :key="field.ref" :field="field" />
 </template>
