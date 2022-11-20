@@ -1,0 +1,494 @@
+{
+  "id": "XrH6qm0B",
+  "type": "quiz",
+  "title": "Example typeform",
+  "workspace": {
+    "href": "https://api.typeform.com/workspaces/sUNnjx"
+  },
+  "theme": {
+    "href": "https://api.typeform.com/themes/qHWOQ7"
+  },
+  "settings": {
+    "language": "en",
+    "progress_bar": "proportion",
+    "meta": {
+      "allow_indexing": false
+    },
+    "hide_navigation": false,
+    "is_public": true,
+    "is_trial": false,
+    "show_progress_bar": true,
+    "show_typeform_branding": true,
+    "are_uploads_public": false,
+    "show_time_to_complete": true,
+    "show_number_of_submissions": false,
+    "show_cookie_consent": false,
+    "show_question_number": true,
+    "pro_subdomain_enabled": false,
+    "capabilities": {
+      "e2e_encryption": {
+        "enabled": false,
+        "modifiable": false
+      }
+    }
+  },
+  "thankyou_screens": [
+    {
+      "id": "X1IISRmlmTJJ",
+      "ref": "01GJ54VYG8W7NTDDGRR2NMMCBE",
+      "title": "",
+      "type": "thankyou_screen",
+      "properties": {
+        "show_button": true,
+        "share_icons": true,
+        "button_mode": "default_redirect",
+        "button_text": "Create a typeform"
+      }
+    },
+    {
+      "id": "DefaultTyScreen",
+      "ref": "default_tys",
+      "title": "Thanks for completing this typeform\nNow *create your own* — it's free, easy, & beautiful",
+      "type": "thankyou_screen",
+      "properties": {
+        "show_button": true,
+        "share_icons": false,
+        "button_mode": "default_redirect",
+        "button_text": "Create a *typeform*"
+      },
+      "attachment": {
+        "type": "image",
+        "href": "https://images.typeform.com/images/2dpnUBBkz2VN"
+      }
+    }
+  ],
+  "fields": [
+    {
+      "id": "w0IoVQeu2Ge2",
+      "title": "*A* or *B?*",
+      "ref": "01GJ54VYG8DEFCANTR4XF652A5",
+      "properties": {
+        "description": "Description",
+        "randomize": false,
+        "allow_multiple_selection": false,
+        "allow_other_choice": false,
+        "vertical_alignment": true,
+        "choices": [
+          {
+            "id": "92sbIyWuEyUv",
+            "ref": "01GJ54VYG89NJ2K05X1YQ10DX1",
+            "label": "Choice 1"
+          },
+          {
+            "id": "mi6j1QoPbshT",
+            "ref": "01GJ54VYG81A4J14Q6SA29ZH4V",
+            "label": "Choice 2"
+          }
+        ]
+      },
+      "validations": {
+        "required": false
+      },
+      "type": "multiple_choice",
+      "attachment": {
+        "type": "image",
+        "href": "https://images.typeform.com/images/WMALzu59xbXQ"
+      },
+      "layout": {
+        "type": "split",
+        "attachment": {
+          "type": "image",
+          "href": "https://images.typeform.com/images/WMALzu59xbXQ"
+        }
+      }
+    },
+    {
+      "id": "EoVxHDQ2cby4",
+      "title": "Why?",
+      "ref": "1b62c7aa-f477-4a51-8b5c-b3c9a1ed72ca",
+      "properties": {},
+      "validations": {
+        "required": false
+      },
+      "type": "short_text"
+    },
+    {
+      "id": "rJlx4XiQsV1c",
+      "title": "Question group ",
+      "ref": "77bab1aa-8e9d-4d51-824f-bc7339004774",
+      "properties": {
+        "button_text": "Continue",
+        "show_button": true,
+        "fields": [
+          {
+            "id": "VbOKvcbAFdCd",
+            "title": "Do you like Typeform?",
+            "ref": "40536c0d-b831-4d48-b793-cf910c452e37",
+            "properties": {},
+            "validations": {
+              "required": false
+            },
+            "type": "yes_no"
+          },
+          {
+            "id": "wvznMvYjiXuL",
+            "title": "Amount?",
+            "ref": "fc45e6cf-b611-42bb-9afb-5ed0493ddd2b",
+            "properties": {
+              "randomize": false,
+              "allow_multiple_selection": false,
+              "allow_other_choice": false,
+              "vertical_alignment": true,
+              "choices": [
+                {
+                  "id": "gHpsfp6G3dWd",
+                  "ref": "46e155ec-38f9-443b-929e-ab0dd3b06818",
+                  "label": "1-5"
+                },
+                {
+                  "id": "k9fdpZBpc2bn",
+                  "ref": "15b4ddb8-7355-49ca-aaed-16754e47249d",
+                  "label": "6-10"
+                },
+                {
+                  "id": "srBVaiB65iJN",
+                  "ref": "30bf5a9f-e834-4269-961f-b0bcac807426",
+                  "label": "11-15"
+                }
+              ]
+            },
+            "validations": {
+              "required": false
+            },
+            "type": "multiple_choice"
+          },
+          {
+            "id": "3WWSdHMEMq8i",
+            "title": "Number?",
+            "ref": "0b243260-1c0f-4122-aa1a-a1b0f700dbcc",
+            "properties": {},
+            "validations": {
+              "required": false
+            },
+            "type": "number"
+          }
+        ]
+      },
+      "type": "group"
+    }
+  ],
+  "variables": {
+    "score": 0
+  },
+  "logic": [
+    {
+      "type": "field",
+      "ref": "01GJ54VYG8DEFCANTR4XF652A5",
+      "actions": [
+        {
+          "action": "jump",
+          "details": {
+            "to": {
+              "type": "field",
+              "value": "1b62c7aa-f477-4a51-8b5c-b3c9a1ed72ca"
+            }
+          },
+          "condition": {
+            "op": "is",
+            "vars": [
+              {
+                "type": "field",
+                "value": "01GJ54VYG8DEFCANTR4XF652A5"
+              },
+              {
+                "type": "choice",
+                "value": "01GJ54VYG89NJ2K05X1YQ10DX1"
+              }
+            ]
+          }
+        },
+        {
+          "action": "jump",
+          "details": {
+            "to": {
+              "type": "field",
+              "value": "77bab1aa-8e9d-4d51-824f-bc7339004774"
+            }
+          },
+          "condition": {
+            "op": "always",
+            "vars": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "field",
+      "ref": "0b243260-1c0f-4122-aa1a-a1b0f700dbcc",
+      "actions": [
+        {
+          "action": "jump",
+          "details": {
+            "to": {
+              "type": "field",
+              "value": "01GJ54VYG8DEFCANTR4XF652A5"
+            }
+          },
+          "condition": {
+            "op": "equal",
+            "vars": [
+              {
+                "type": "field",
+                "value": "0b243260-1c0f-4122-aa1a-a1b0f700dbcc"
+              },
+              {
+                "type": "constant",
+                "value": 0
+              }
+            ]
+          }
+        },
+        {
+          "action": "jump",
+          "details": {
+            "to": {
+              "type": "field",
+              "value": "01GJ54VYG8DEFCANTR4XF652A5"
+            }
+          },
+          "condition": {
+            "op": "not_equal",
+            "vars": [
+              {
+                "type": "field",
+                "value": "0b243260-1c0f-4122-aa1a-a1b0f700dbcc"
+              },
+              {
+                "type": "constant",
+                "value": 0
+              }
+            ]
+          }
+        },
+        {
+          "action": "jump",
+          "details": {
+            "to": {
+              "type": "field",
+              "value": "01GJ54VYG8DEFCANTR4XF652A5"
+            }
+          },
+          "condition": {
+            "op": "lower_than",
+            "vars": [
+              {
+                "type": "field",
+                "value": "0b243260-1c0f-4122-aa1a-a1b0f700dbcc"
+              },
+              {
+                "type": "constant",
+                "value": 0
+              }
+            ]
+          }
+        },
+        {
+          "action": "jump",
+          "details": {
+            "to": {
+              "type": "field",
+              "value": "01GJ54VYG8DEFCANTR4XF652A5"
+            }
+          },
+          "condition": {
+            "op": "greater_than",
+            "vars": [
+              {
+                "type": "field",
+                "value": "0b243260-1c0f-4122-aa1a-a1b0f700dbcc"
+              },
+              {
+                "type": "constant",
+                "value": 0
+              }
+            ]
+          }
+        },
+        {
+          "action": "jump",
+          "details": {
+            "to": {
+              "type": "field",
+              "value": "01GJ54VYG8DEFCANTR4XF652A5"
+            }
+          },
+          "condition": {
+            "op": "lower_equal_than",
+            "vars": [
+              {
+                "type": "field",
+                "value": "0b243260-1c0f-4122-aa1a-a1b0f700dbcc"
+              },
+              {
+                "type": "constant",
+                "value": 0
+              }
+            ]
+          }
+        },
+        {
+          "action": "jump",
+          "details": {
+            "to": {
+              "type": "thankyou",
+              "value": "01GJ54VYG8W7NTDDGRR2NMMCBE"
+            }
+          },
+          "condition": {
+            "op": "greater_equal_than",
+            "vars": [
+              {
+                "type": "field",
+                "value": "0b243260-1c0f-4122-aa1a-a1b0f700dbcc"
+              },
+              {
+                "type": "constant",
+                "value": 0
+              }
+            ]
+          }
+        },
+        {
+          "action": "jump",
+          "details": {
+            "to": {
+              "type": "thankyou",
+              "value": "default_tys"
+            }
+          },
+          "condition": {
+            "op": "equal",
+            "vars": [
+              {
+                "type": "variable",
+                "value": "score"
+              },
+              {
+                "type": "constant",
+                "value": 0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "field",
+      "ref": "fc45e6cf-b611-42bb-9afb-5ed0493ddd2b",
+      "actions": [
+        {
+          "action": "add",
+          "details": {
+            "target": {
+              "type": "variable",
+              "value": "score"
+            },
+            "value": {
+              "type": "constant",
+              "value": 1
+            }
+          },
+          "condition": {
+            "op": "is",
+            "vars": [
+              {
+                "type": "field",
+                "value": "fc45e6cf-b611-42bb-9afb-5ed0493ddd2b"
+              },
+              {
+                "type": "choice",
+                "value": "46e155ec-38f9-443b-929e-ab0dd3b06818"
+              }
+            ]
+          }
+        },
+        {
+          "action": "multiply",
+          "details": {
+            "target": {
+              "type": "variable",
+              "value": "score"
+            },
+            "value": {
+              "type": "constant",
+              "value": 2
+            }
+          },
+          "condition": {
+            "op": "and",
+            "vars": [
+              {
+                "op": "is",
+                "vars": [
+                  {
+                    "type": "field",
+                    "value": "fc45e6cf-b611-42bb-9afb-5ed0493ddd2b"
+                  },
+                  {
+                    "type": "choice",
+                    "value": "15b4ddb8-7355-49ca-aaed-16754e47249d"
+                  }
+                ]
+              },
+              {
+                "op": "is",
+                "vars": [
+                  {
+                    "type": "field",
+                    "value": "01GJ54VYG8DEFCANTR4XF652A5"
+                  },
+                  {
+                    "type": "choice",
+                    "value": "01GJ54VYG89NJ2K05X1YQ10DX1"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "action": "divide",
+          "details": {
+            "target": {
+              "type": "variable",
+              "value": "score"
+            },
+            "value": {
+              "type": "variable",
+              "value": "score"
+            }
+          },
+          "condition": {
+            "op": "is_not",
+            "vars": [
+              {
+                "type": "field",
+                "value": "fc45e6cf-b611-42bb-9afb-5ed0493ddd2b"
+              },
+              {
+                "type": "choice",
+                "value": "30bf5a9f-e834-4269-961f-b0bcac807426"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "created_at": "2022-11-18T10:34:36+00:00",
+  "last_updated_at": "2022-11-20T00:07:33+00:00",
+  "published_at": "2022-11-18T10:37:14+00:00",
+  "_links": {
+    "display": "https://d81zomutv0e.typeform.com/to/XrH6qm0B"
+  }
+}
