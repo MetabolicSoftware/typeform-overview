@@ -32,7 +32,7 @@ defineProps({
         </template>
       </div>
       <pre
-        class="mt-2 text-sm overflow-x-auto print:[&_code]:whitespace-pre-wrap"
+        class="mt-2 text-sm overflow-x-auto print:whitespace-pre-wrap"
         v-html="field.logic"
       />
     </div>
